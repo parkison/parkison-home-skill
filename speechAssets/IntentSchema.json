@@ -1,32 +1,78 @@
 {
-  "intents": [
-    {
-      "intent": "AlexaMeetupNumbers"
-    },
-    {
-      "intent": "Hello"
-    },
-    {
-      "intent": "AlexaMeetupCityCheck",
-      "slots": [
-        {
-          "name": "USCity",
-          "type": "AMAZON.US_CITY"
-        },
-        {
-          "name": "EuropeanCity",
-          "type": "AMAZON.EUROPE_CITY"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "parkison bot",
+            "intents": [
+                {
+                    "name": "Hello",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "hi",
+                        "hey"
+                    ]
+                },
+                {
+                    "name": "nameCheck",
+                    "slots": [
+                        {
+                            "name": "firstName",
+                            "type": "firstName"
+                        }
+                    ],
+                    "samples": [
+                        "I'm {firstName}",
+                        "my name is {firstName}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "firstName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "nathan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marjorie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maddie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ben"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
     }
-  ]
 }

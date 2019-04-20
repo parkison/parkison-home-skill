@@ -1,0 +1,13 @@
+Hello hello
+Hello hi
+Hello hey
+
+AlexaMeetupNumbers how many cities have alexa meetups
+AlexaMeetupNumbers how many alexa meetups are there
+
+AlexaMeetupCityCheck if {USCity} has an alexa meetup
+AlexaMeetupCityCheck if {European} has an alexa meetup
+AlexaMeetupCityCheck does {USCity} has an alexa meetup
+AlexaMeetupCityCheck does {European} has an alexa meetup
+AlexaMeetupCityCheck check {USCity}
+AlexaMeetupCityCheck check {European}

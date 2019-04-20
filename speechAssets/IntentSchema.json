@@ -1,0 +1,32 @@
+{
+  "intents": [
+    {
+      "intent": "AlexaMeetupNumbers"
+    },
+    {
+      "intent": "Hello"
+    },
+    {
+      "intent": "AlexaMeetupCityCheck",
+      "slots": [
+        {
+          "name": "USCity",
+          "type": "AMAZON.US_CITY"
+        },
+        {
+          "name": "EuropeanCity",
+          "type": "AMAZON.EUROPE_CITY"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
